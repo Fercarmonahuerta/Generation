@@ -1,0 +1,183 @@
+<!DOCTYPE html> <!--Es una etiqueta para indicar el tipo de infomación-->
+<!--Este es un comentario-->
+<!--ALT + Z para ajustar el texto-->
+<html lang="en">
+    <!--El elemento html encierra todo el contenido de la página entera y a veces se le conoce como elemento raíz -->
+<head>
+    <!--Actúa como un contenedor de todo aquello que quieres incluir en la página html que no es visible para los usuarios de la página. Puede incluir palabras clave, una descripción, código CSS-->
+    <meta charset="UTF-8">
+    <!--Esta etiqueta especifica la codificación de caracteres utilizada en la página web. En este caso, se establece la codificación de caracteres estándar que admite una amplia variedad de idiomas y caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Esta etiqueta se utiliza para estableces el tamoño y la escala inicial de la página web en dispositivos móviles. Esto asegura que nuestra página se adpate a diferentes tamaños en la pantalla-->
+    <title>Introducción a HTML</title>
+    <!--Título que aparece en la pestaña del navegador-->
+</head>
+<body>
+    <!--Todos lo elementos del sitio.
+    Encierra todo el contenido que deseas mostrar a los usuarios que visiten tu página-->
+    <p>Porqué entré a Generation?
+        Porque yo estaba en la búsqueda de un bootcamp en el área de programación, ya que yo ya había tomado un curso en Python, sin embargo sentía que necesitaba más herramientas. Esto para obtener un trabajo con mayor remuneración y con la posibilidad de trabajo Home Office.
+    </p><!--Sirve para indicar que aquí va un párrafo-->
+    <h1>Generation</h1>
+    <h2>Subtítulo 2</h2>
+    <h3>Esto es otra cabecera</h3>
+    <h4>Cuarta cabecera</h4>
+    <h5>Quinta cabecera</h5>
+    <h6>Sexta Cabecera</h6>
+    <br><!--Define un salto de línea sin comenzar un nuevo párrafo.-->
+    <hr><!--Define una ruptura temática en una página HTML y, con mayor frecuencia, se muestra como una regla horizontal. Se usa para separar el contenido (o definir un cambio) en una página HTML-->
+    <!--Atributos-->
+    <!--Atributos globales: Son aquellos que se aplicar a todos los elementos del documento, y no dependen de la etiqueta. Entre los atributos globlales más importantes están:
+    
+        - Class: Se usa para especificar una clase CSS que se aplicará a un elemento. Por ejemplo <div class="clase1 clase2">.
+        
+        - id: Se usa para especificar un identificador unico para un elemento (el valor debe ser único dentro del documento HTML).
+
+        - Style: Se usa para especificar una propiedad CSS que se aplicará a un elemento. El atributo HTML style se usa para agregar estilos a un elemento, como color, fuente, tamaño y más.
+    https://www.aluracursos.com/blog/ques-es-html-parte-5-atributos -->
+    <h3>Atributos HTML</h3>
+    <p style="color:brown" align="justify">Los atributos html proporcionan información adicional sobre elementos html. 
+        <br>
+        Todos los elementos html puede tener atributos y estos proporcionan información adicional sobre los elementos. Los atributos siempre se especifican en la etiqueta de inicio, generalmente vienen en pares de nombre, valor como: nombre="valor".
+    </p>
+    <p style="color:blueviolet">Mira este enlace.</p>
+    <br>
+    <hr>
+    <!--Etiquetas de párrafo de texto 
+    Nos sirven para crear párrafos dentro de nuestro documento. las etiquetas de párrafo tiene una serie de atributos que nos permiten definir el tamaño, color, estilo, etc.
+    <p align="center">
+    <p align="right">
+    <p align="left">
+    <p align="justify">-->
+    
+    <!--Etiquetas Semanticas: fragmentos de texto
+    Son etiquetas HTML simples para seleccionar un fragmento de texto y dotarlo de un significado semántico especial. Lo principal es entender que no se hace sólo por mera intención visual, sino porque se le quiere dar un significado semántico, y además, quizás también por una cuestión visual
+    https://lenguajehtml.com/html/texto/que-son/
+-->
+<p align="center" style="color:blue; background-color:blanchedalmond">
+    <b><em>QUÍMICA LA CIENCIA CENTRAL</em></b> <!--Formato en negrita--><!--Etiqueta em enfatiza texto-->
+    <br>
+    La química ha sido llamada <u>"la ciencia central"</u>.<!--Etiqueta u subraya--> Y realmente lo es, en muchos sentidos. Está a medio camino entre el mundo frío y ordenado de la física y el desordenado y cambiante de la <del>biología</del>.<!--del texto tachdo--> Por medio de la química estos dos extremos se conectan y muestran que la naturaleza es una, pese a nuestra artificial división en varias ciencias. Las leyes de la física, a través de las manifestaciones fisicoquímicas, primero, y las propiamente químicas, en niveles sucesivamente más complejos, van dando origen a esos fenómenos emergentes que llamamos biología. 
+</p>
+<br>
+<hr>
+<!--Etiquetas de enlace.-->
+    <!--
+        <a></a> etiqueta anchor (anclaje) permite crear hipervínculos
+
+        Los enlaces nos permiten la navegacion por medio de hipervinculos (links) que realizan una conexion y referencian otros archivos o paginas web dentro de la misma aplicacion o externa a la misma.
+
+    En HTML 5 se pueden definir los enlaces con la etiqueta a que significa "anchor" o ancla. Esta etiqueta tiene varios atributos:
+
+    - href: nos permite definir la ubicación de la página a la que nos vamos a enlazar. Este atributo puede ser una URL (externa) o un archivo dentro de nuestra carpeta del proyecto (assets). La dirección va entre comillas.El atributo href. La <a>etiqueta define un hipervínculo. El href-atributo especifica la URL de la página a la que va el enlace.
+
+    - target: Define la ventana de destino, que puede ser una ventana nueva o la misma ventana.
+        - _blank: abre el enlace en una nueva ventana.
+        - _self: abre el enlace en la misma ventana. Este es el valor por defecto.
+        Ya que sabemos como hacer referencias a paginas, es importante conocer las distintas rutas de enlace y sus tipos.
+
+    - Rutas absolutas: Son aquellas que definien la ubicacion completa de un archivo o pagina web, por ejemplo: http://www.google.com.
+
+    - Rutas relativas: Son las que se definen a partir de la posicion en la estructura local de la pagina que lo esta refiriendo,es decir, solo indica el orden de directorios, por ejemplo: /assets/img/perritoplayero.jpg.
+-->
+<h4>Etiqueta a</h4>
+<a href="https://mexico.generation.org/" target="_blank">Gereration</a><br>
+<br>
+<a href="amilto: laura.valladolid@idr.edu.mx">Enviar correo a Mar</a>
+
+<!--Etiqueta de imagen: img
+    la etiqueta imagen nos permite agregar una imagen en un documento web. Em formatas mas usados: jpeg, png, gift.
+    - src (source): define la ubicación del archivo ya sea externo o interno
+    - wid: definimos ancho de imagen
+    - hight: definimos el alto de nuestra imagen
+    - alt: agregamos una descripción a la imagen
+-->
+<img src="/HTML/Assets/pexels-quang-nguyen-vinh-2132240.jpg" width="400" height="400" alt="suculentas">
+<br>
+<hr>
+<!--
+    LISTAS
+Listas ordenadas: Listas que tienen un orden (numeros o letras)
+    1.- Tacos al pastor
+    2 - Tacos de suadero
+    3.- Tacos de chicharron
+
+    a.- Tacos al pastor
+    b - Tacos de suadero
+    c.- Tacos de chicharron
+
+Listas desordenadas: Listas que NO tienen un orden (bullets o figuritas)
+
+    - Tacos al pastor
+    - Tacos de suadero
+    - Tacos de chicharron
+
+    <ol> Ordered list o lista ordenada </ol>
+    <li> List item o elemento de la lista </li>
+    <ul> desordenada
+
+-->
+<h3>Listas Ordenadas y Desordenadas</h3>
+<ol>Pasos para una limonada
+    <li>Reúne los limones, agua y azúcar</li>
+    <li>Disolver azúcar en el agua</li>
+    <li>Cortar los limones y exprimir en el agua</li>
+    <li>Revolver y servir</li>
+<br>
+<br>
+<ul>Lista de útiles
+    <li>Mochila</li>
+    <li>Cuadernos</li>
+    <li>Lápiz</li>
+    <li>Tijeras</li>
+    <li>plumas</li>
+</ul>
+</ol>
+<br>
+<br>
+<!--Etiqueta Div-->
+<!--La <div>etiqueta define una división o una sección en un documento HTML.
+    La <div>etiqueta se utiliza como contenedor de elementos HTML, que luego se diseñan con CSS o se manipulan con JavaScript.
+    
+    La <div>etiqueta se diseña fácilmente usando el atributo class o id.
+    
+    ¡Se puede poner cualquier tipo de contenido dentro de la <div> etiqueta! 
+    
+    Nota: De forma predeterminada, los navegadores siempre colocan un salto de línea antes y después del <div>elemento.
+
+    Todos los atributos que se agreguen al div se aplicarán a todos los elementos. -->
+<h2>Etiqueta Div</h2>
+<div style="background-color: aquamarine; border: 1px solid yellowgreen ">
+    <h4>Soy un encabezado dentro de un div</h4>
+    <p>Soy un párrafo dentro del mismo div</p>
+</div>
+<p>soy un párrafo fuera de un div</p>
+<br>
+<br>
+<!--La etiqueta <span> es un contenedor en línea que se utiliza para marcar una parte de un texto o una parte de un documento.
+
+    La etiqueta <span> se diseña fácilmente con CSS o se manipula con JavaScript usando el atributo class o id.
+    
+    La etiqueta <span> es muy parecida al elemento <div> , pero <div> es un elemento a nivel de bloque y <span>es un elemento en línea.-->
+        <h3>El elemento span</h3>
+        <p>
+            El elemento <span> es utilizado para agurpar texto u otros componentes HTML en un solo contenedor. 
+            En la CH35, tomamos <span style="color:brown">cafecito en una taza</span> y nos gusta comer <span style="background-color: darkkhaki;">pan con nutella</span>
+        </p>
+<br>
+<br>
+        <p align=center style="background-color:darkgreen; color:white">
+            Teotihuacán, ubicada en el Valle de México, es una de las ciudades antiguas más fascinantes de Mesoamérica. Su nombre, que significa Lugar donde los dioses fueron creados en náhuatl, refleja la importancia espiritual y mística que tuvo para las civilizaciones precolombinas. La ciudad alcanzó su apogeo entre los años 150 y 450 d.C., siendo en ese período una de las urbes más grandes del mundo, con una población estimada de más de 100,000 habitantes. Sus monumentales pirámides del Sol y de la Luna son impresionantes ejemplos de arquitectura prehispánica, y la Calzada de los Muertos, que conecta estos monumentos, sirvió como eje principal de la ciudad. Teotihuacán también es conocida por sus complejas y bien planificadas estructuras residenciales, sus murales decorativos y la presencia de la Ciudadela, un espacio que alberga el Templo de la Serpiente Emplumada. La civilización que construyó Teotihuacán dejó un legado duradero en la región, y hoy en día, explorar este sitio arqueológico es sumergirse en la rica historia y cultura de las antiguas civilizaciones mesoamericanas.
+
+        </p>
+<br>
+<br>
+<ul>Lista del supermercado
+    <li>Cebolla</li>
+    <li>Pepino</li>
+    <li>zanahoria</li>
+    <li>leche</li>
+</ul>
+</body>
+</html><!--Cierre del documento HTML que iniciamos en el DOCTYPE-->
