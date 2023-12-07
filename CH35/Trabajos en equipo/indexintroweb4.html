@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introWeb4 - HTML Avanzado</title>
+    <!--Style-->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1>Ejemplo de tabla</h1>
+    <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas-->
+    <caption>Tabla de nombres</caption> <!--Caption representa un título descriptivo de una tabla-->
+    <table border="1"> <!--Crea el elemento tabla con el atributo border le añadimos bordes a nuestra table--> 
+        <tr><!--Esta etiqueta representa una fila-->
+            <th>Encabezado</th><!--Representa las celdas de encabezado-->
+            <th>Encabezado2</th>
+        </tr> 
+        <tr>
+            <td>Nombre1</td><!--Representa la primera celda de la primera fila-->
+            <td>Apellido1</td><!--Representa la segunda celda de la primer fila-->
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>Valladolid</td>
+        </tr>
+        <tr>
+            <td>Braulio</td>
+            <td>Santiago</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+
+    <caption>Tabla con errores de nuestros nombres</caption>
+    <table border="5" style="padding: 10px;">
+        <tr class="título">
+            <th class="correcto">Nombres o apellidos correctos</th>
+            <th class="incorrecto">Nombres o apellidos con error</th>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Esquivel</td>
+            <td class="incorrecto">Ezquivel</td>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Eveida</td>
+            <td class="incorrecto">Ebeida o Evelyn</td>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Zaldívar</td>
+            <td class="incorrecto">Saldivar</td>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Cerón</td>
+            <td class="incorrecto">Zerón o Serón</td>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Linares</td>
+            <td class="incorrecto">Linarez</td>
+        </tr class="lista">
+        <tr class="lista">
+            <td class="correcto">Alexis</td>
+            <td class="incorrecto">Aletsis</td>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Carmona</td>
+            <td class="incorrecto">Karmona</td>
+        </tr>
+        <tr class="lista">
+            <td class="correcto">Ania</td>
+            <td class="incorrecto">Anita o  Anahí</td>
+        </tr>
+
+
+
+    </table>
+    
+</body>
+</html>

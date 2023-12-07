@@ -1,0 +1,218 @@
+:root {
+    /* --nombre-variable */
+    --font-primary: 'Poppins', sans-serif;
+    --color-prymary: #a60311;
+    --color-secondary: #d9042b;
+    --color-text-primary: #D9CCB4;
+    --color-text-secondary: #D98E04;
+    --color-background: #590219;
+    --color-light: #F2F2F2;
+    --color-dark: #070C26;
+}
+    /* 
+    Enfoque de diseño basado en sistemas para establecer reglas y patrones escalables y reutilizables.
+    Se personalizan variables para acceder a cualquier valor de una propiedad mediante la pseudoclase ":root" con la sintaxis --nombre-variable 
+    */
+
+body{
+    background-color: var(--color-background);
+    color: var(--color-light);
+    font-family: var(--font-primary);
+}
+
+.position{
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-dark);
+}
+
+/* La posición static es la posición por default del html, no se afecta por top, bottom, left ni right de ningún tipo*/
+#static{
+    background-color: var(--color-text-secondary);
+    position: static;
+    margin: 1rem;
+}
+
+/*Es posicionado de forma relativa al elemento anterior o posición original y asi permite movimiento mediante propiedades top, bottom, lef y right*/
+#relative{
+    top:800px;
+    position:relative;
+    margin: 1rem;
+    background-color: var(--color-prymary);
+}
+
+/*Se posiciona de forma relativa a su ancestro más cercano y no con respecto al viewport*/
+#absolute{
+    position: absolute
+    top: 20px;
+    left: 20px;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+#ancestro{
+    position: absolute;
+    width: 100px;
+    background-color: var(--color-dark);
+    border: solid var(--color-light) 1px;
+}
+
+/* Nos permite mantener el lemento de manuera fija en el viewport*/
+/*#fixed{
+    left: 350px;
+    top: 500px;
+    position: fixed;
+    background-color: cadetblue;
+
+}*/
+
+#chat {
+    position: fixed;
+    top: 500px;
+    left: 370px;
+    width: 60px;
+    height: 60px;
+}
+#whatsapp-icon{
+    width: 3em;
+    height: 3em;
+}
+
+.display-inline{
+    display:inline;
+
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-text-primary);
+    color: var(--color-dark);
+    text-align: center;
+    margin: 2px;
+}
+
+.display-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-secondary);
+    text-align: center;
+    margin: 2px;
+}
+
+.display-none{
+    display: none;
+}
+
+@media (max-width: 728px){
+    .display-none{
+        display:none;
+    }
+}
+
+/*Display flex. me permite trabajar de marea flexible con elementos anidados dentro de un acnestro. el flexbox se aplica en el contariner y por default, la drieccion de flex es el filas (row)
+Vamos a poder acceder a diversas propiedades para modificar el comportameinto de los elementos*/
+    /* Flex-direcition: column-reverse, row, row-reveres
+    Flex-wrap: wrap, nowrap, wrap-reverse
+    justify-content: center, flex-start, flex-end, space between, space-around.
+    - align item: satart, end y center
+    - align self: flex-start, flex-end  (solo para un elemento evita la alineacion a la clase a la que pertence)
+    */
+.container{
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column-reverse;*/
+    flex-wrap: wrap;
+    width: auto;
+    background-color: var(--color-text-secondary);
+    height: 350px;
+    margin:10px;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: flex-end;
+
+}
+
+.display-flex{
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    background-color: var(--color-background);
+    border-radius: 6px;
+}
+
+#item-6{
+    align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color:var(--color-light);
+}
+
+/* Grid layout
+Elementos de una cuadricual grid: contenerdor, items, celdas, area.
+display: grid;
+
+*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    grid-template-rows: auto;
+}
+
+.display-grid{
+    background-color: var(--color-text-secondary);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    border: solid var(--color-text-primary);
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 2fr);
+    /*grid-template-rows: 1fr 2fr 2fr 1fr;*/
+    grid-template-areas: 
+        "head"
+        "aside"
+        "article"
+        "footer"
+    ;
+    width: auto;
+    height: 500px;
+    border: solid var(--color-text-primary) 0.7px;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+header {
+    background-color: darkviolet;
+    grid-area: head;
+}
+/*nav {
+    background-color: darkslategrey;
+    grid-area: nav;
+}*/
+
+article{
+    background-color: tomato;
+    grid-area: article;
+}
+aside{
+    background-color: seagreen;
+    grid-area: aside;
+}
+section{
+    background-color: peru;
+    grid-area: section;
+}
+footer{
+    background-color: deepskyblue;
+    grid-area: footer;
+}
