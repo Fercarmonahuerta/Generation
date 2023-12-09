@@ -1,0 +1,40 @@
+body{
+    ;
+    
+}
+
+.Formulario {
+    display: flex;
+    flex-wrap: wrap;
+    /*position: absolute;*/
+    top: 150px;
+    left: 20%;
+    width: 400px;
+    /*transform: translate(-50%, -50%);*/
+    background-color: white;
+    
+}
+
+h2 {
+    text-align: center;
+    padding: ;
+}
+
+.username{
+    text-align: center;
+}
+.registro{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 140px ;
+}
+.imagen{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    position: absolute;
+    left: 450px;
+    top: 150px;
+    
+}

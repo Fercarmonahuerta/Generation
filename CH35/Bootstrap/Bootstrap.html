@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Intro-Bootstrap</title>
 <!--Como agragar bootstrap a nuestro proyecto
     
@@ -22,10 +23,11 @@
   
     -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="./Styles/style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+  
   <nav class="navbar navbar-expand-sm" id="NavPrincipal">
     <div class="container">
       <a class="navbar-brand">Intro</a>
@@ -46,43 +48,141 @@
       </div>
     </div>
   </nav>
-<br>
-<br>
 
-<h1>Booststrap-Intro</h1>
-<br>
-<br>
-<h2>Clases principales y de mayor uso en Bootstrap</h2>
-<p>A continuación te presento algunas clases importantes para utilizar en bootstrap</p>
-<div class="container-fluid" id="InfoGeneral">
-  <div class="row">
-    <div class="col-sm" id="ClaseContenerdor">
-        <h4>Class= "Container"</h4>
-        <p>Ocupa las 12 columnas del grid que proporciona css,pero deja un margen a los costados</p>
-        <h4>Class="Container-fluid"</h4>
+  <br>
+  <br>
+  <h1>Bootstrap Intro</h1>
+  <br><br>
+  <h2>Clases principales y de mayor uso en Bootstrap</h2>
+  <p>A continuación te presento algunas clases importantes para utilizar en Bootstrap</p>
+  <div class="container-fluid" id="infogeneral">
+    <div class="row">
+      <div class="col-sm" id="clasecontenendor">
+        <h4>class="container"</h4>
+        <p>Ocupa las 12 columnas del grid que proporciona CSS, pero deja un margen a los costados</p>
+        <h4>class="container-fluid"</h4>
         <p>Ocupa el tamaño completo del viewport</p>
-    
-      <div class="col-sm" id="ClaseRow">
-        <h4>Class="Row"</h4>
-        <p>Indica que el elemento contenedor se comporta como una fila dentro del Grid</p>
-
       </div>
-
-    </div>
-    <div class="col-sm" id="ClaseCol">
-      <h4>Class=col-n/xx</h4>
-      <p>Dos permiten establecer el numero de colmnas que queremos que ocupe un elemento/componente<br>
-      Se puede delimitar tanto con numero como con nomenclaturas predefinidas<br>
-      Ejemplos: sm, md, lg, xl, xxl
-      </p>
+      <div class="col-sm" id="claserow">
+        <h4>class="row"</h4>
+        <p>Indica que el elemento contenedor se comporta como una fila dentro del Grid</p>
+      </div>
+      <div class="col-sm" id="classcol">
+        <h4>class="col-n/xx"</h4>
+        <p>Dos permiten establecer el número de columnas que queremos que ocupe un elemento componente.<br>Se puede delimitar tanto con número como con nomenclaturas predefinidas</p>
+        <br>Ejemplos: sm, md, lg, xl, xxl. 
+      </div>
     </div>
   </div>
+  <br>
+  <!--Clases
+    El framework bootstrap nos proporciona una serie de atributos class=""
+    previamente definidos, los cuales podemos mandar a llamar dentro de nuestro
+    archivo HTML
 
-</div>
+    Los distintos valores que van dentro del atributo class="" se pueden consultar en la
+    documentacion oficial del framework
 
+    Para utilizar la grilla de CSS y manipularla a nuestro antojo
+    con BOOTSTRAP
+
+    Todos los elementos se colocan dentro de una etiqueta div
+    con alguna de las siguientes clases
+
+    Class="container" - Ocupa las 12 columnas del grid que proporciona CSS, pero deja un margen a los costados
+    Class="container-fluid" - Ocupa el tamaño completo de la pantalla
+
+    Class="row" - Indica que el contenedor se comprtara como una fila
+
+    Class="col-n"
+    El atributo Class="col-n" nos permite establecer el numero de columnas que queramos ocupe un elemento
+    como lo puede ser un texto, imagen, card, etc. -->
 
 
     <!--Script linkea funciones de componentes de Bootstrap a travez de CDN-->
+
+
+
+  <h2>
+    Ejemplo para manipulación del grid a través de las Clases
+  </h2>
+  <!--El sistema de cuadrícula de Bootstrap puede adaptarse a los seis puntos de interrupción predeterminados y a cualquier punto de interrupción que personalices. Los seis niveles de cuadrícula predeterminados son los siguientes:
+
+Extra pequeño (xs)
+Pequeño (sm)
+Mediano (md)
+Grande (lg)
+Extra grande (xl)
+Extra extra grande (xxl)-->
+  <br>
+  <div class="container-fluid texte-center">
+    <div class="row">
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+      <div class="col-1 border">span1</div>
+    </div>
+    <div class="row">
+      <div class="col-3 border">span3</div>
+      <div class="col-3 border">span3</div>
+      <div class="col-3 border">span3</div>
+      <div class="col-3 border">span3</div>
+    </div>
+    <div class="row">
+      <div class="col-4 border">span4</div>
+      <div class="col-4 border">span4</div>
+      <div class="col-4 border">span4</div>
+    </div>
+    <div class="row">
+      <div class="col-4 border">span4</div>
+      <div class="col-8 border">span8</div>
+    </div>
+    <div class="row">
+      <div class="col-6 border">span6</div>
+      <div class="col-6 border">span6</div>
+    </div>
+    <div class="row">
+      <div class="col-12 border">span12</div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <h1>Botones de Bootstrap</h1>
+    <button type="button" class="btn btn-outline-primary">One Direction</button>
+    <button type="button" class="btn btn-outline-secondary">Harry</button>
+    <button type="button" class="btn btn-outline-success">Louis</button>
+    <button type="button" class="btn btn-outline-danger">Liam</button>
+    <button type="button" class="btn btn-outline-warning">Niall</button>
+    <button type="button" class="btn btn-outline-info">Zayn</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    <!--Elementos funcionales
+  Bootstrap ha decidido darle estilos por defecto para que se vean mejor, es decir,  que  continuación tienen ya apariencia visual, colores, bordes, etc.-->
+  <br>
+  <hr>
+  <h1>Tarjetas</h1>
+  <br>
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
 </body>
 </html>
