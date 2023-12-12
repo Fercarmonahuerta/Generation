@@ -9,6 +9,7 @@
     --color-light: #F2F2F2;
     --color-dark: #070C26;
 }
+
     /* 
     Enfoque de diseño basado en sistemas para establecer reglas y patrones escalables y reutilizables.
     Se personalizan variables para acceder a cualquier valor de una propiedad mediante la pseudoclase ":root" con la sintaxis --nombre-variable 
