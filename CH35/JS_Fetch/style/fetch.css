@@ -1,0 +1,32 @@
+body {
+    background-color: #D91EAA;
+    color: white;
+    font-family: "karla", sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: solid black 2px;
+    box-shadow: black 0px 2px -1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover{
+    background-color:blueviolet;
+    color:azure;
+    /*border: none;*/
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#mensaje, #store{
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Kalnia', serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    border: 0px solid;
+    background-color: rgb(185, 184, 184);
+    padding: 10px;
+}
+
+button {
+    padding:8px 60px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input {
+    padding: 8px 16px;
+}
+
+button:hover {
+    background-color: lightskyblue;
+}
