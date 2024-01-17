@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TiposDeDatosyVariables&apos; to &apos;tiposDeDatosyVariables&apos;" description="Rename resource &apos;TiposDeDatosyVariables&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/TiposDeDatosyVariables" name="tiposDeDatosyVariables" stamp="1705089934768" updateReferences="true"/>
+</session>

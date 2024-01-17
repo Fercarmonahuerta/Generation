@@ -44,7 +44,7 @@ título.style.color = "#5058F2";
 //Manipular el texto de un elemento
 const titulo2 = document.querySelector("#title2");
 titulo2.innerText = "Sesión de Manipulación del DOM-CH35";
-titulo2.style.color = "#F23D3D";
+titulo2.style.color = "black";
 
 /* Métodos para crear y agregar elemento en el DOM 
 Este proceso se divide en dos partes: 1. Crear el nodo y agregar el nodo

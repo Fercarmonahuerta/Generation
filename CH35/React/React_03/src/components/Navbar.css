@@ -1,0 +1,46 @@
+.navbar--container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow: hidden;
+    /*background: linear-gradient();*/
+    background-color: #FF9A8B;
+    background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+
+
+}
+
+.navbar--title{
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Copperplate, fantasy;
+    color: #DDD6F3;
+}
+
+.navbar--links{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 21px;
+}
+
+.navbar--link{
+    padding: 5px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #9FACE6;
+    
+
+}

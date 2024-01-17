@@ -1,0 +1,22 @@
+package bucles;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+		/*
+		 While ejecuta un bloque de cjódigo hasta que se cumpla una condición
+		 
+		 while (expresión){
+		 bloque a ejecutar
+		 (contador-iterador)
+		 }
+		 * */
+		int cuenta = 0;
+		while(cuenta < 10) {
+			cuenta ++;
+			System.out.println("la cuenta es de " + cuenta);
+		}
+		
+	}
+
+}

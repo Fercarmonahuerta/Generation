@@ -1,0 +1,20 @@
+package controlFlujo;
+
+public class FlujoControl {
+
+	public static void main(String[] args) {
+		//Para que se ejecute, siempre debe de ir en el método principal
+		
+		//Se define una vaible del tipo String donde se alamcena un dato
+		String viaje = null; // Luego se agrega la fecha
+		//Variable declarada e inicializada, en null a propósito, para tener un espacio de memoria ya asignado, y solo reemplazarlo con un nuevo dato.
+		//Para validar si podemos viajar en cierta fecha
+		if (viaje != null) {//viariable vacía
+			System.out.println("Ya no tenemos fechas disponibles, una disculpa.");
+		} else {
+			System.out.print("Puede reservar su viaje");
+		}
+
+	}
+
+}
