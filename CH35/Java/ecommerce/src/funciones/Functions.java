@@ -1,0 +1,48 @@
+package funciones;
+import java.util.ArrayList;
+import java.util.List;
+public class Functions {
+	
+	static class Producto {//Clase para representar un producto
+		String nombre;
+		double precio;
+		
+		Producto (String nombre, double precio){
+			this.nombre = nombre; //Se usa this para crear un objeto
+			this.precio = precio;
+		}
+		
+	static class CarritoCompra {
+		List<Producto> productos = new ArrayList<>();
+		void agregarProducto (Producto barbie) {//Trae el producto al carrito
+			 productos.add(barbie);
+		}
+		
+	double calcularTotal () {
+		double total = 0;
+		for(Producto barbie : productos) { //Es un for EACH
+			total += barbie.precio;
+		}
+		
+		return total;
+	}
+	}
+		
+	}
+
+	public static void main(String[] args) { //Main es el punto de ejecución
+		
+		Producto munieca1 = new Producto ("Chelsea", 98.70);
+		Producto munieca2 = new Producto ("Skipper", 85.40);
+		
+		CarritoCompra carrito = new CarritoCompra();//Instanciando
+		carrito.agregarProducto(munieca1);
+		carrito.agregarProducto(munieca2);
+		
+		double totalCarrito = carrito.calcularTotal();
+		
+		System.out.println("Total del carrito: $" + totalCarrito);
+		
+	}
+
+}
